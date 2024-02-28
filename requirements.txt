@@ -1,0 +1,12 @@
+networkx
+rasterio
+numpy
+matplotlib
+seaborn
+pandas
+jupyter
+shapely
+Pyarrow
+openpyxl
+scipy
+
