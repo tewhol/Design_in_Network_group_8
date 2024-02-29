@@ -1,7 +1,7 @@
 library(“statnet”)
 library(“sna”)
 
-
+#yooooooooooooo waddup
 network_data <- read.csv("FILENAME.csv", header=F)
 network_data_sociomatrix <- network(network_data, directed=FALSE)
 network_data_sociomatrix
