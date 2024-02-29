@@ -1,5 +1,5 @@
-library(“statnet”)
-library(“sna”)
+library('statnet')
+library('sna')
 
 #yooooooooooooo waddup
 network_data <- read.csv("FILENAME.csv", header=F)
