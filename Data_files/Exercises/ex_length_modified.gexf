@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2024-02-29">
+    <creator>NetworkX 3.2.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="1" title="betweenness" type="double" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="Pagerank" type="double" />
+    </attributes>
+    <nodes>
+      <node id="A" label="A">
+        <attvalues>
+          <attvalue for="0" value="0.018824531639885442" />
+        </attvalues>
+      </node>
+      <node id="B" label="B">
+        <attvalues>
+          <attvalue for="0" value="0.08756825514731159" />
+        </attvalues>
+      </node>
+      <node id="C" label="C">
+        <attvalues>
+          <attvalue for="0" value="0.11483588849686291" />
+        </attvalues>
+      </node>
+      <node id="D" label="D">
+        <attvalues>
+          <attvalue for="0" value="0.02284796052395632" />
+        </attvalues>
+      </node>
+      <node id="E" label="E">
+        <attvalues>
+          <attvalue for="0" value="0.11643548297154274" />
+        </attvalues>
+      </node>
+      <node id="F" label="F">
+        <attvalues>
+          <attvalue for="0" value="0.018824531639885442" />
+        </attvalues>
+      </node>
+      <node id="G" label="G">
+        <attvalues>
+          <attvalue for="0" value="0.28290488028239963" />
+        </attvalues>
+      </node>
+      <node id="H" label="H">
+        <attvalues>
+          <attvalue for="0" value="0.14351130296186917" />
+        </attvalues>
+      </node>
+      <node id="I" label="I">
+        <attvalues>
+          <attvalue for="0" value="0.19424716633628664" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="A" target="B" id="0" weight="10">
+        <attvalues>
+          <attvalue for="1" value="0.027777777777777776" />
+        </attvalues>
+      </edge>
+      <edge source="A" target="C" id="1" weight="15">
+        <attvalues>
+          <attvalue for="1" value="0.06944444444444445" />
+        </attvalues>
+      </edge>
+      <edge source="B" target="C" id="2" weight="35">
+        <attvalues>
+          <attvalue for="1" value="0.16666666666666666" />
+        </attvalues>
+      </edge>
+      <edge source="B" target="D" id="3" weight="2">
+        <attvalues>
+          <attvalue for="1" value="0.1111111111111111" />
+        </attvalues>
+      </edge>
+      <edge source="C" target="E" id="4" weight="5">
+        <attvalues>
+          <attvalue for="1" value="0.3194444444444444" />
+        </attvalues>
+      </edge>
+      <edge source="E" target="G" id="5" weight="8">
+        <attvalues>
+          <attvalue for="1" value="0.3055555555555555" />
+        </attvalues>
+      </edge>
+      <edge source="F" target="C" id="6" weight="5">
+        <attvalues>
+          <attvalue for="1" value="0.09722222222222221" />
+        </attvalues>
+      </edge>
+      <edge source="G" target="B" id="7" weight="7">
+        <attvalues>
+          <attvalue for="1" value="0.2638888888888889" />
+        </attvalues>
+      </edge>
+      <edge source="G" target="H" id="8" weight="14">
+        <attvalues>
+          <attvalue for="1" value="0.09722222222222221" />
+        </attvalues>
+      </edge>
+      <edge source="G" target="I" id="9" weight="6">
+        <attvalues>
+          <attvalue for="1" value="0.08333333333333333" />
+        </attvalues>
+      </edge>
+      <edge source="H" target="I" id="10" weight="18">
+        <attvalues>
+          <attvalue for="1" value="0.08333333333333333" />
+        </attvalues>
+      </edge>
+      <edge source="I" target="G" id="11" weight="6">
+        <attvalues>
+          <attvalue for="1" value="0.15277777777777776" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
