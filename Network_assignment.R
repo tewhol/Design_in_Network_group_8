@@ -9,14 +9,14 @@ library('sna')
 
 
 # Loading in the network
-network_data <- data.matrix(read.csv("randstad_city_graph1.csv", sep=";", header=T))
+network_data <- data.matrix(read.csv("Data_files/randstad_city_graph1.csv", sep=";", header=T))
 network_data_sociomatrix <- network(network_data, directed=F)
 # network_data_sociomatrix  # What does this line do?
 # network.size(network_data_sociomatrix) # What does this line do?
 
 
 # Loading in the attributes of the nodes
-attributes <- read.csv("Graph_randstad.csv", sep=";", header =TRUE)
+attributes <- read.csv("Data_files/Graph_randstad.csv", sep=";", header =TRUE)
 set.vertex.attribute(network_data_sociomatrix,names(attributes), 
                      attributes)
 list.vertex.attributes(network_data_sociomatrix)
