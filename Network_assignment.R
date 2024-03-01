@@ -27,7 +27,7 @@ head(attributes)  # What does this line do?
 # Plotting the graph
 gplot(network_data_sociomatrix,displaylabels=T,
       label.cex=0.5,
-      vertex.cex=1/log10(attributes$Employees)*5,
+      vertex.cex=attributes$Employees*0.001,
       usearrows=FALSE)
 
 
