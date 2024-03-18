@@ -10,3 +10,4 @@ Pyarrow
 openpyxl
 scipy
 folium
+osmnx
