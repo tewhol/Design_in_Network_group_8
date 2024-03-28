@@ -1,3 +1,8 @@
+install.packages('statnet')
+install.packages('tergm')
+install.packages('ergm')
+install.packages('network')
+install.packages('sna')
 library('tergm')
 library('statnet')
 library('ergm')
