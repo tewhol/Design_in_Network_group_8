@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4938b6a8-669e-4ec9-88b9-6e14101f5a72" name="Changes" comment="With weighted plots">
+      <change beforePath="$PROJECT_DIR$/Randstad_modified.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Randstad_modified.ipynb" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2dXkZA4TOICTI5tvZwsKUWJMQCZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/Part 3",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jvlan\PycharmProjects\Design_in_Network_group_8" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4938b6a8-669e-4ec9-88b9-6e14101f5a72" name="Changes" comment="" />
+      <created>1710161865880</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710161865880</updated>
+      <workItem from="1710161867017" duration="3145000" />
+      <workItem from="1710170468857" duration="601000" />
+      <workItem from="1710171154926" duration="1929000" />
+      <workItem from="1710939535257" duration="595000" />
+      <workItem from="1711099129645" duration="7000" />
+      <workItem from="1711361429816" duration="710000" />
+      <workItem from="1712508714148" duration="5809000" />
+      <workItem from="1712656434135" duration="4560000" />
+      <workItem from="1712732365762" duration="15526000" />
+    </task>
+    <task id="LOCAL-00001" summary="Pagerank values">
+      <option name="closed" value="true" />
+      <created>1712516008399</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712516008399</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Closeness values">
+      <option name="closed" value="true" />
+      <created>1712658796162</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712658796162</updated>
+    </task>
+    <task id="LOCAL-00003" summary="regrission and polynomial">
+      <option name="closed" value="true" />
+      <created>1712736139785</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712736139785</updated>
+    </task>
+    <task id="LOCAL-00004" summary="regrission and polynomial">
+      <option name="closed" value="true" />
+      <created>1712737953334</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712737953334</updated>
+    </task>
+    <task id="LOCAL-00005" summary="regrission and polynomial">
+      <option name="closed" value="true" />
+      <created>1712738358127</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712738358127</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Pagerank with weight">
+      <option name="closed" value="true" />
+      <created>1712740175151</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712740175151</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Pagerank with weight and listed">
+      <option name="closed" value="true" />
+      <created>1712740948243</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712740948243</updated>
+    </task>
+    <task id="LOCAL-00008" summary="With weighted plots">
+      <option name="closed" value="true" />
+      <created>1712742238319</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1712742238319</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Pagerank values" />
+    <MESSAGE value="Closeness values" />
+    <MESSAGE value="regrission and polynomial" />
+    <MESSAGE value="Pagerank with weight" />
+    <MESSAGE value="Pagerank with weight and listed" />
+    <MESSAGE value="With weighted plots" />
+    <option name="LAST_COMMIT_MESSAGE" value="With weighted plots" />
+  </component>
+</project>

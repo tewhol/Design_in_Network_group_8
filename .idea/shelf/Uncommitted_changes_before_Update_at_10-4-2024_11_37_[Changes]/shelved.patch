@@ -1,0 +1,95 @@
+Index: Randstad_modified.ipynb
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Randstad_modified.ipynb b/Randstad_modified.ipynb
+--- a/Randstad_modified.ipynb	(revision 29bd2683178d65d86ccc05cf859453b768a57a7b)
++++ b/Randstad_modified.ipynb	(date 1712741766995)
+@@ -3279,7 +3279,7 @@
+   },
+   {
+    "cell_type": "code",
+-   "execution_count": 124,
++   "execution_count": 131,
+    "outputs": [],
+    "source": [
+     "import networkx as nx\n",
+@@ -3299,10 +3299,10 @@
+     "pagerank_with_weights = nx.pagerank(Randstad_Graph, weight='combined_weight')\n",
+     "\n",
+     "# Compute weighted closeness centrality (assuming 'randstad_car_times' are the weights)\n",
+-    "weighted_closeness = nx.closeness_centrality(Randstad_Graph, distance='randstad_car_times')\n",
++    "weighted_closeness = nx.closeness_centrality(Randstad_Graph, distance='time')\n",
+     "\n",
+     "# Compute weighted betweenness centrality\n",
+-    "weighted_betweenness = nx.betweenness_centrality(Randstad_Graph, weight='randstad_car_times')\n",
++    "weighted_betweenness = nx.betweenness_centrality(Randstad_Graph, weight='time')\n",
+     "\n",
+     "# Add these weighted centralities to your df_network DataFrame\n",
+     "df_network['Weighted_Closeness'] = df_network['Municipality'].map(weighted_closeness)\n",
+@@ -3312,8 +3312,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-04-10T09:16:05.184311200Z",
+-     "start_time": "2024-04-10T09:16:04.687708300Z"
++     "end_time": "2024-04-10T09:34:44.184945Z",
++     "start_time": "2024-04-10T09:34:43.853498900Z"
+     }
+    }
+   },
+@@ -3506,14 +3506,14 @@
+   },
+   {
+    "cell_type": "code",
+-   "execution_count": 127,
++   "execution_count": 134,
+    "outputs": [
+     {
+      "data": {
+-      "text/plain": "               Municipality  Weighted_Closeness  Weighted_Betweenness  \\\n4                 Amsterdam            0.420000              0.173870   \n6                  Den Haag            0.411765              0.170357   \n13                 Schiedam            0.338710              0.138095   \n12                Rotterdam            0.403846              0.205317   \n16                  Utrecht            0.446809              0.198443   \n19                  Woerden            0.446809              0.087434   \n14  Schiphol Haarlemmermeer            0.456522              0.111884   \n9                   Haarlem            0.411765              0.136345   \n11                   Leiden            0.456522              0.199722   \n10                Hilversum            0.350000              0.014059   \n21               Zoetermeer            0.396226              0.026151   \n18                 Westland            0.328125              0.042857   \n20                 Zaanstad            0.344262              0.015692   \n5                     Delft            0.375000              0.084167   \n2        Alphen aan de Rijn            0.420000              0.038069   \n1                    Almere            0.313433              0.005726   \n3                Amersfoort            0.328125              0.008333   \n8                     Gouda            0.437500              0.105146   \n7                 Dordrecht            0.403846              0.114524   \n17              Vlaardingen            0.287671              0.004762   \n0                   Alkmaar            0.300000              0.000000   \n15              Spijkenisse            0.256098              0.000000   \n\n    PageRank_Weighted  \n4            0.167426  \n6            0.083007  \n13           0.067545  \n12           0.065338  \n16           0.059886  \n19           0.052981  \n14           0.052613  \n9            0.050382  \n11           0.046966  \n10           0.045629  \n21           0.042272  \n18           0.041380  \n20           0.039833  \n5            0.028677  \n2            0.027877  \n1            0.026662  \n3            0.023328  \n8            0.021032  \n7            0.017184  \n17           0.015204  \n0            0.013124  \n15           0.011654  ",
+-      "text/html": "<div>\n<style scoped>\n    .dataframe tbody tr th:only-of-type {\n        vertical-align: middle;\n    }\n\n    .dataframe tbody tr th {\n        vertical-align: top;\n    }\n\n    .dataframe thead th {\n        text-align: right;\n    }\n</style>\n<table border=\"1\" class=\"dataframe\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Municipality</th>\n      <th>Weighted_Closeness</th>\n      <th>Weighted_Betweenness</th>\n      <th>PageRank_Weighted</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>4</th>\n      <td>Amsterdam</td>\n      <td>0.420000</td>\n      <td>0.173870</td>\n      <td>0.167426</td>\n    </tr>\n    <tr>\n      <th>6</th>\n      <td>Den Haag</td>\n      <td>0.411765</td>\n      <td>0.170357</td>\n      <td>0.083007</td>\n    </tr>\n    <tr>\n      <th>13</th>\n      <td>Schiedam</td>\n      <td>0.338710</td>\n      <td>0.138095</td>\n      <td>0.067545</td>\n    </tr>\n    <tr>\n      <th>12</th>\n      <td>Rotterdam</td>\n      <td>0.403846</td>\n      <td>0.205317</td>\n      <td>0.065338</td>\n    </tr>\n    <tr>\n      <th>16</th>\n      <td>Utrecht</td>\n      <td>0.446809</td>\n      <td>0.198443</td>\n      <td>0.059886</td>\n    </tr>\n    <tr>\n      <th>19</th>\n      <td>Woerden</td>\n      <td>0.446809</td>\n      <td>0.087434</td>\n      <td>0.052981</td>\n    </tr>\n    <tr>\n      <th>14</th>\n      <td>Schiphol Haarlemmermeer</td>\n      <td>0.456522</td>\n      <td>0.111884</td>\n      <td>0.052613</td>\n    </tr>\n    <tr>\n      <th>9</th>\n      <td>Haarlem</td>\n      <td>0.411765</td>\n      <td>0.136345</td>\n      <td>0.050382</td>\n    </tr>\n    <tr>\n      <th>11</th>\n      <td>Leiden</td>\n      <td>0.456522</td>\n      <td>0.199722</td>\n      <td>0.046966</td>\n    </tr>\n    <tr>\n      <th>10</th>\n      <td>Hilversum</td>\n      <td>0.350000</td>\n      <td>0.014059</td>\n      <td>0.045629</td>\n    </tr>\n    <tr>\n      <th>21</th>\n      <td>Zoetermeer</td>\n      <td>0.396226</td>\n      <td>0.026151</td>\n      <td>0.042272</td>\n    </tr>\n    <tr>\n      <th>18</th>\n      <td>Westland</td>\n      <td>0.328125</td>\n      <td>0.042857</td>\n      <td>0.041380</td>\n    </tr>\n    <tr>\n      <th>20</th>\n      <td>Zaanstad</td>\n      <td>0.344262</td>\n      <td>0.015692</td>\n      <td>0.039833</td>\n    </tr>\n    <tr>\n      <th>5</th>\n      <td>Delft</td>\n      <td>0.375000</td>\n      <td>0.084167</td>\n      <td>0.028677</td>\n    </tr>\n    <tr>\n      <th>2</th>\n      <td>Alphen aan de Rijn</td>\n      <td>0.420000</td>\n      <td>0.038069</td>\n      <td>0.027877</td>\n    </tr>\n    <tr>\n      <th>1</th>\n      <td>Almere</td>\n      <td>0.313433</td>\n      <td>0.005726</td>\n      <td>0.026662</td>\n    </tr>\n    <tr>\n      <th>3</th>\n      <td>Amersfoort</td>\n      <td>0.328125</td>\n      <td>0.008333</td>\n      <td>0.023328</td>\n    </tr>\n    <tr>\n      <th>8</th>\n      <td>Gouda</td>\n      <td>0.437500</td>\n      <td>0.105146</td>\n      <td>0.021032</td>\n    </tr>\n    <tr>\n      <th>7</th>\n      <td>Dordrecht</td>\n      <td>0.403846</td>\n      <td>0.114524</td>\n      <td>0.017184</td>\n    </tr>\n    <tr>\n      <th>17</th>\n      <td>Vlaardingen</td>\n      <td>0.287671</td>\n      <td>0.004762</td>\n      <td>0.015204</td>\n    </tr>\n    <tr>\n      <th>0</th>\n      <td>Alkmaar</td>\n      <td>0.300000</td>\n      <td>0.000000</td>\n      <td>0.013124</td>\n    </tr>\n    <tr>\n      <th>15</th>\n      <td>Spijkenisse</td>\n      <td>0.256098</td>\n      <td>0.000000</td>\n      <td>0.011654</td>\n    </tr>\n  </tbody>\n</table>\n</div>"
++      "text/plain": "               Municipality  Weighted_Closeness  Betweenness  \\\n4                 Amsterdam            0.017018     0.173870   \n6                  Den Haag            0.017857     0.170357   \n13                 Schiedam            0.014208     0.138095   \n12                Rotterdam            0.015897     0.205317   \n16                  Utrecht            0.016092     0.198443   \n19                  Woerden            0.018277     0.087434   \n14  Schiphol Haarlemmermeer            0.019143     0.111884   \n9                   Haarlem            0.015602     0.136345   \n11                   Leiden            0.019213     0.199722   \n10                Hilversum            0.014000     0.014059   \n21               Zoetermeer            0.018119     0.026151   \n18                 Westland            0.015032     0.042857   \n20                 Zaanstad            0.013898     0.015692   \n5                     Delft            0.015672     0.084167   \n2        Alphen aan de Rijn            0.018970     0.038069   \n1                    Almere            0.012500     0.005726   \n3                Amersfoort            0.012575     0.008333   \n8                     Gouda            0.018733     0.105146   \n7                 Dordrecht            0.013880     0.114524   \n17              Vlaardingen            0.013672     0.004762   \n0                   Alkmaar            0.011844     0.000000   \n15              Spijkenisse            0.010725     0.000000   \n\n    Weighted_Betweenness  PageRank_Weighted  \n4               0.211905           0.167426  \n6               0.211905           0.083007  \n13              0.130952           0.067545  \n12              0.178571           0.065338  \n16              0.145238           0.059886  \n19              0.109524           0.052981  \n14              0.178571           0.052613  \n9               0.057143           0.050382  \n11              0.192857           0.046966  \n10              0.028571           0.045629  \n21              0.052381           0.042272  \n18              0.050000           0.041380  \n20              0.033333           0.039833  \n5               0.085714           0.028677  \n2               0.033333           0.027877  \n1               0.000000           0.026662  \n3               0.000000           0.023328  \n8               0.147619           0.021032  \n7               0.069048           0.017184  \n17              0.009524           0.015204  \n0               0.000000           0.013124  \n15              0.000000           0.011654  ",
++      "text/html": "<div>\n<style scoped>\n    .dataframe tbody tr th:only-of-type {\n        vertical-align: middle;\n    }\n\n    .dataframe tbody tr th {\n        vertical-align: top;\n    }\n\n    .dataframe thead th {\n        text-align: right;\n    }\n</style>\n<table border=\"1\" class=\"dataframe\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Municipality</th>\n      <th>Weighted_Closeness</th>\n      <th>Betweenness</th>\n      <th>Weighted_Betweenness</th>\n      <th>PageRank_Weighted</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>4</th>\n      <td>Amsterdam</td>\n      <td>0.017018</td>\n      <td>0.173870</td>\n      <td>0.211905</td>\n      <td>0.167426</td>\n    </tr>\n    <tr>\n      <th>6</th>\n      <td>Den Haag</td>\n      <td>0.017857</td>\n      <td>0.170357</td>\n      <td>0.211905</td>\n      <td>0.083007</td>\n    </tr>\n    <tr>\n      <th>13</th>\n      <td>Schiedam</td>\n      <td>0.014208</td>\n      <td>0.138095</td>\n      <td>0.130952</td>\n      <td>0.067545</td>\n    </tr>\n    <tr>\n      <th>12</th>\n      <td>Rotterdam</td>\n      <td>0.015897</td>\n      <td>0.205317</td>\n      <td>0.178571</td>\n      <td>0.065338</td>\n    </tr>\n    <tr>\n      <th>16</th>\n      <td>Utrecht</td>\n      <td>0.016092</td>\n      <td>0.198443</td>\n      <td>0.145238</td>\n      <td>0.059886</td>\n    </tr>\n    <tr>\n      <th>19</th>\n      <td>Woerden</td>\n      <td>0.018277</td>\n      <td>0.087434</td>\n      <td>0.109524</td>\n      <td>0.052981</td>\n    </tr>\n    <tr>\n      <th>14</th>\n      <td>Schiphol Haarlemmermeer</td>\n      <td>0.019143</td>\n      <td>0.111884</td>\n      <td>0.178571</td>\n      <td>0.052613</td>\n    </tr>\n    <tr>\n      <th>9</th>\n      <td>Haarlem</td>\n      <td>0.015602</td>\n      <td>0.136345</td>\n      <td>0.057143</td>\n      <td>0.050382</td>\n    </tr>\n    <tr>\n      <th>11</th>\n      <td>Leiden</td>\n      <td>0.019213</td>\n      <td>0.199722</td>\n      <td>0.192857</td>\n      <td>0.046966</td>\n    </tr>\n    <tr>\n      <th>10</th>\n      <td>Hilversum</td>\n      <td>0.014000</td>\n      <td>0.014059</td>\n      <td>0.028571</td>\n      <td>0.045629</td>\n    </tr>\n    <tr>\n      <th>21</th>\n      <td>Zoetermeer</td>\n      <td>0.018119</td>\n      <td>0.026151</td>\n      <td>0.052381</td>\n      <td>0.042272</td>\n    </tr>\n    <tr>\n      <th>18</th>\n      <td>Westland</td>\n      <td>0.015032</td>\n      <td>0.042857</td>\n      <td>0.050000</td>\n      <td>0.041380</td>\n    </tr>\n    <tr>\n      <th>20</th>\n      <td>Zaanstad</td>\n      <td>0.013898</td>\n      <td>0.015692</td>\n      <td>0.033333</td>\n      <td>0.039833</td>\n    </tr>\n    <tr>\n      <th>5</th>\n      <td>Delft</td>\n      <td>0.015672</td>\n      <td>0.084167</td>\n      <td>0.085714</td>\n      <td>0.028677</td>\n    </tr>\n    <tr>\n      <th>2</th>\n      <td>Alphen aan de Rijn</td>\n      <td>0.018970</td>\n      <td>0.038069</td>\n      <td>0.033333</td>\n      <td>0.027877</td>\n    </tr>\n    <tr>\n      <th>1</th>\n      <td>Almere</td>\n      <td>0.012500</td>\n      <td>0.005726</td>\n      <td>0.000000</td>\n      <td>0.026662</td>\n    </tr>\n    <tr>\n      <th>3</th>\n      <td>Amersfoort</td>\n      <td>0.012575</td>\n      <td>0.008333</td>\n      <td>0.000000</td>\n      <td>0.023328</td>\n    </tr>\n    <tr>\n      <th>8</th>\n      <td>Gouda</td>\n      <td>0.018733</td>\n      <td>0.105146</td>\n      <td>0.147619</td>\n      <td>0.021032</td>\n    </tr>\n    <tr>\n      <th>7</th>\n      <td>Dordrecht</td>\n      <td>0.013880</td>\n      <td>0.114524</td>\n      <td>0.069048</td>\n      <td>0.017184</td>\n    </tr>\n    <tr>\n      <th>17</th>\n      <td>Vlaardingen</td>\n      <td>0.013672</td>\n      <td>0.004762</td>\n      <td>0.009524</td>\n      <td>0.015204</td>\n    </tr>\n    <tr>\n      <th>0</th>\n      <td>Alkmaar</td>\n      <td>0.011844</td>\n      <td>0.000000</td>\n      <td>0.000000</td>\n      <td>0.013124</td>\n    </tr>\n    <tr>\n      <th>15</th>\n      <td>Spijkenisse</td>\n      <td>0.010725</td>\n      <td>0.000000</td>\n      <td>0.000000</td>\n      <td>0.011654</td>\n    </tr>\n  </tbody>\n</table>\n</div>"
+      },
+-     "execution_count": 127,
++     "execution_count": 134,
+      "metadata": {},
+      "output_type": "execute_result"
+     }
+@@ -3526,19 +3526,19 @@
+     "df_network_sorted = df_network.sort_values(by='PageRank_Weighted', ascending=False)\n",
+     "\n",
+     "# Display the sorted DataFrame\n",
+-    "df_network_sorted[['Municipality', 'Weighted_Closeness', 'Weighted_Betweenness', 'PageRank_Weighted']]\n"
++    "df_network_sorted[['Municipality', 'Weighted_Closeness', 'Betweenness', 'Weighted_Betweenness', 'PageRank_Weighted']]\n"
+    ],
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-04-10T09:21:39.548294500Z",
+-     "start_time": "2024-04-10T09:21:39.153638700Z"
++     "end_time": "2024-04-10T09:36:06.776298900Z",
++     "start_time": "2024-04-10T09:36:06.449770200Z"
+     }
+    }
+   },
+   {
+    "cell_type": "code",
+-   "execution_count": 126,
++   "execution_count": 133,
+    "outputs": [
+     {
+      "name": "stderr",
+@@ -3758,8 +3758,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-04-10T09:17:30.389000300Z",
+-     "start_time": "2024-04-10T09:17:25.712417600Z"
++     "end_time": "2024-04-10T09:35:03.900918300Z",
++     "start_time": "2024-04-10T09:34:59.763579800Z"
+     }
+    }
+   },
